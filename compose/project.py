@@ -63,7 +63,7 @@ class Project(object):
     @classmethod
     def from_dicts(cls, name, service_dicts, client):
         """
-        Construct a ServiceCollection from a list of dicts representing services.
+        Construct a Project from a list of dicts representing services.
         """
         project = cls(name, [], client)
         for service_dict in sort_service_dicts(service_dicts):
